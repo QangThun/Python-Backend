@@ -34,6 +34,7 @@
 # d = True #bool    
 # e = None #kiểu dữ liệu rỗng
 # f = 1 + 2j #kiểu dữ liệu phức
+
 # print(type(a)) #kiểm tra kiểu dữ liệu
 # print(type(b))
 # print(type(c))
@@ -42,7 +43,150 @@
 # print(type(f))
 
 # 6. Ép kiểu dữ liệu
+
 # int() - chuyển đổi sang kiểu số nguyên
 # float() - chuyển đổi sang kiểu số thực
 # str() - chuyển đổi sang kiểu chuỗi
 # bool() - chuyển đổi sang kiểu boolean
+
+# n = 100
+# m = "200"
+# print(n+int(m)) #ép kiểu m từ str sang int để cộng với n , nếu ko báo lỗi
+
+#7. Cac toán số học 
+# +, -, *, /, //, %, **
+
+# print(a/b) #chia lấy kết quả thực
+# print(a//b) #chia lấy kết quả nguyên  
+# print(a%b) #chia lấy phần dư
+# print(a**b) #lũy thừa
+# a = int(input("Nhập vào a: "))
+# b = int(input("Nhập vào b: "))
+# print("{0} + {1} = {2}" .format(a ,b , a+b))    
+# print("{0} - {1} = {2}" .format(a ,b , a-b))    
+# print("{0} * {1} = {2}" .format(a ,b , a*b))    
+# print("{0} / {1} = {2}" .format(a ,b , a/b))    
+# print("{0} // {1} = {2}" .format(a ,b , a//b))    
+# print("{0} % {1} = {2}" .format(a ,b , a%b))    
+# print("{0} ** {1} = {2}" .format(a ,b , a**b))    
+
+# 8. Toán tử so sánh
+# ==, !=, >, <, >=, <= 
+
+# print(a != b) #so sánh a có khác b 
+# x = int(input("Nhập vào x: "))
+# y = int(input("Nhập vào y: "))
+# # Trả về True hoặc False
+# print(x != y)
+# print(x == y)
+# print(x > y)
+# print(x < y)
+# print(x >= y)
+# print(x <= y)
+
+# 9. Toán tử logic
+# and, or, not
+
+# x = int(input("Nhập vào x: "))
+# y = int(input("Nhập vào y: "))
+# print ( x > 0 and y > 5) 
+# print ( x > 0 or y > 5)
+# print ( not ( x > y ))
+
+# 10. Toán tử gán
+# =, +=, -=, *=, /=, //=, %=, **=
+
+# a = 5
+# a += 2 # a = a + 2
+# print(int(a))
+# a -= 2 # a = a - 2
+# print(int(a))
+# a *= 2 # a = a * 2
+# print(int(a))
+# a /= 2 # a = a / 2
+# print(int(a))
+# a //= 2 # a = a // 2
+# print(int(a))
+# a %= 2 # a = a % 2
+# print(int(a))
+# a **= 2 # a = a ** 2
+# print(int(a))
+
+# 11.Thư viện math  
+import math 
+# print(math.pi) #hằng số pi
+# print(math.e) #hằng số e
+# print(math.sqrt(a)) #căn bậc 2
+# print(math.fabs(-5)) #giá trị tuyệt đối
+# print(math.pow(a, b)) #lũy thừa
+# print(math.factorial(a)) #giai thừa
+# print(math.ceil(5.1)) #làm tròn lên
+# print(math.floor(5.9)) #làm tròn xuống
+# print(math.sin(a)) #hàm sin
+# print(math.cos(a)) #hàm cos
+# print(math.tan(a)) #hàm tan
+# print(math.log(a)) #hàm log
+# print(math.log10(a)) #hàm log cơ số 10
+# print(math.radians(a)) #đổi độ sang radian
+# print(math.degrees(a)) #đổi radian sang độ
+# print(math.gcd(12, 15)) #ước chung lớn nhất
+# print(math.lcm(12, 15)) #bội chung nhỏ nhất
+# print(math.isqrt(10)) #căn bậc 2 của số nguyên
+
+# x = float(input("x: "))
+# print("sqrt(x) = ", math.sqrt(x))
+# print("fabs(x) = ", math.fabs(x))
+# print("sin(x) = " , math.sin(x))
+# print("pow(x , 2) = ", math.pow(x, 2))
+# print("ceil(x) = ", math.ceil(x))
+
+# 13.Toán tử ba ngôi
+# điều kiện đúng if điều kiện else điều kiện sai
+# a = int(input("Nhập vào a: "))
+# kq = " số chẵn " if ( a % 2 == 0) else " số lẻ "
+# print ( a , "là " , kq) 
+
+#14.Câu lệnh rẽ nhánh if...else
+# x = float(input("Nhập vào x: "))
+# vd1
+# if x % 2 == 0 :
+#     print (x," là số chẵn")
+# else : 
+#     print (x," là số lẻ")
+
+# print("Kết thúc chương trình")
+
+# vd2
+# if x >= 9 :
+#     print("Học sinh giỏi")
+# elif x >= 7 :
+#     print("Học sinh khá")
+# elif x >= 5 :
+#     print("Học sinh trung bình")
+# else :
+#     print("Học sinh yếu")
+# print("Kết thúc chương trình")
+
+# 15.Giải phương trình bậc 2
+print("Giải phương trình bậc 2: ax^2 + bx + c = 0")
+a = float(input("Nhập vào a: "))
+b = float(input("Nhập vào b: "))
+c = float(input("Nhập vào c: "))
+if (a != 0): 
+    delta = b**2 - 4*a*c
+    if (delta < 0 ):
+        print("Phương trình vô nghiệm")
+    elif (delta == 0) :
+        x = -b/(2*a)
+        print("Phương trình có nghiệm kép x1 = x2 = ", x) 
+    else :
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+        print("Phương trình có 2 nghiệm phân biệt: x1 = ", x1, " x2 = ", x2)
+else :
+    print("Không phải phương trình bậc 2")
+
+
+
+
+
